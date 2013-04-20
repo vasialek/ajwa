@@ -392,7 +392,7 @@ namespace ConsoleApplication1
                         string currentTid = getTidByUzId(uz_id);
                         string prid = "";
 
-                        /*
+                        
                         string service_type_id = data["service_type_id"].ToString();  //Service types, chid - 18
                         string arrival_location_id = data["arrival_location_id"].ToString(); // Locations, chid - 20
                         string departure_location_id = data["departure_location_id"].ToString(); //Locations, chid - 19
@@ -485,7 +485,7 @@ namespace ConsoleApplication1
 
                         }
                         data_extra_serv.Close();
-                         */
+                        
 
                         count++;
                         Console.WriteLine("record completed = " + count + "; tid = " + startTid + ";" + " uzid = " + uz_id);
