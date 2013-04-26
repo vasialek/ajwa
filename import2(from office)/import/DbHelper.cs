@@ -52,6 +52,9 @@ namespace ConsoleApplication1
             try
             {
                 connection.Open();
+				// Setting tiimeout on mysqlServer
+                MySqlCommand cmd = new MySqlCommand("set net_write_timeout=99999; set net_read_timeout=99999", connection);
+				cmd.ExecuteNonQuery();
 
                 return true;
             }
